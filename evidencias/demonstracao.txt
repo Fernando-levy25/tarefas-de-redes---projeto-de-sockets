@@ -1,0 +1,83 @@
+DEMONSTRAÇÃO REAL EM PROCESSOS SEPARADOS
+Porta livre escolhida para evitar conflito: 36655
+Servidor e cliente em 127.0.0.1
+
+COMANDOS ENVIADOS
+ping
+adicionar Preparar a apresentação
+listar
+concluir 1
+listar
+concluir 999
+sair
+
+SAÍDA DO CLIENTE
+Conectado. Comandos: adicionar TEXTO | listar | concluir ID | ping | sair
+> {
+  "v": 1,
+  "ok": true,
+  "mensagem": "PONG"
+}
+> {
+  "v": 1,
+  "ok": true,
+  "tarefa": {
+    "id": 1,
+    "texto": "Preparar a apresentação",
+    "concluida": false
+  }
+}
+> {
+  "v": 1,
+  "ok": true,
+  "tarefas": [
+    {
+      "id": 1,
+      "texto": "Preparar a apresentação",
+      "concluida": false
+    }
+  ]
+}
+> {
+  "v": 1,
+  "ok": true,
+  "tarefa": {
+    "id": 1,
+    "texto": "Preparar a apresentação",
+    "concluida": true
+  }
+}
+> {
+  "v": 1,
+  "ok": true,
+  "tarefas": [
+    {
+      "id": 1,
+      "texto": "Preparar a apresentação",
+      "concluida": true
+    }
+  ]
+}
+> {
+  "v": 1,
+  "ok": false,
+  "erro": "NAO_ENCONTRADA",
+  "mensagem": "Tarefa inexistente."
+}
+> {
+  "v": 1,
+  "ok": true,
+  "mensagem": "Até logo."
+}
+
+LOG DO SERVIDOR
+2026-10-23 22:12:08,974 Escutando em 127.0.0.1:36655; Ctrl+C encerra.
+2026-10-23 22:12:08,983 Conexão de 127.0.0.1:59000
+2026-10-23 22:12:09,043 Conexão de 127.0.0.1:59004
+2026-10-23 22:12:09,043 op='PING' ok=True
+2026-10-23 22:12:09,044 op='ADD' ok=True
+2026-10-23 22:12:09,044 op='LIST' ok=True
+2026-10-23 22:12:09,044 op='DONE' ok=True
+2026-10-23 22:12:09,044 op='LIST' ok=True
+2026-10-23 22:12:09,045 op='DONE' ok=False
+2026-10-23 22:12:09,045 op='QUIT' ok=True

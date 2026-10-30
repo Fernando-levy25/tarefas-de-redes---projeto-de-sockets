@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660">
+<defs><marker id="seta" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2563eb"/></marker></defs>
+<rect width="1100" height="660" fill="#f5f7fb"/>
+<g font-family="sans-serif" fill="#15263e">
+<text x="55" y="60" font-size="30" font-weight="bold">Tarefas em Rede | Arquitetura cliente-servidor</text>
+<text x="55" y="95" font-size="17">TR/1 sobre TCP • Padrão local: 127.0.0.1:5000 • Cliente remoto: IPv4 real do servidor</text>
+<rect x="55" y="160" width="290" height="130" rx="16" fill="white" stroke="#9aacc2"/>
+<text x="80" y="202" font-size="24" font-weight="bold">Cliente A</text>
+<text x="80" y="235" font-size="18">Processo: cliente.py</text>
+<text x="80" y="263" font-size="17">Porta de origem efêmera</text>
+<rect x="55" y="355" width="290" height="130" rx="16" fill="white" stroke="#9aacc2"/>
+<text x="80" y="397" font-size="24" font-weight="bold">Cliente B</text>
+<text x="80" y="430" font-size="18">Processo: cliente.py</text>
+<text x="80" y="458" font-size="17">Porta de origem efêmera</text>
+<rect x="675" y="155" width="365" height="340" rx="16" fill="#e7efff" stroke="#2563eb" stroke-width="2"/>
+<text x="705" y="200" font-size="24" font-weight="bold">Servidor central</text>
+<text x="705" y="235" font-size="18">Processo: servidor.py</text>
+<text x="705" y="267" font-size="18">Socket de escuta: TCP 5000</text>
+<text x="705" y="316" font-size="18">Uma thread por conexão</text>
+<text x="705" y="349" font-size="18">Validação e execução TR/1</text>
+<rect x="700" y="379" width="315" height="88" rx="10" fill="white"/>
+<text x="720" y="412" font-size="18" font-weight="bold">Tarefas em memória</text>
+<text x="720" y="440" font-size="17">Acesso protegido por trava</text>
+<g stroke="#2563eb" stroke-width="3" marker-start="url(#seta)" marker-end="url(#seta)">
+<path d="M360 225H655"/><path d="M360 420H655"/></g>
+<text x="403" y="201" font-size="18">Requisição / resposta</text>
+<text x="403" y="255" font-size="17">JSON UTF-8 + LF</text>
+<text x="403" y="396" font-size="18">Requisição / resposta</text>
+<text x="403" y="450" font-size="17">JSON UTF-8 + LF</text>
+<text x="55" y="554" font-size="18">Operações: PING • ADD • LIST • DONE • QUIT</text>
+<text x="55" y="592" font-size="17">Os clientes mantêm conexões independentes; ambos consultam o mesmo estado no servidor.</text>
+<text x="55" y="623" font-size="17">Loopback: todos os processos na mesma máquina. LAN: clientes em máquinas diferentes.</text>
+</g></svg>

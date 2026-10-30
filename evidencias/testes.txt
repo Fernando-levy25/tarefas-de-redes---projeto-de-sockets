@@ -1,0 +1,14 @@
+test_utf8_array_e_linha_incompleta (__main__.Enquadramento.test_utf8_array_e_linha_incompleta) ... ok
+test_cliente_cai_servidor_continua (__main__.Integracao.test_cliente_cai_servidor_continua) ... ok
+test_clientes_simultaneos (__main__.Integracao.test_clientes_simultaneos) ... ok
+test_fluxo_completo (__main__.Integracao.test_fluxo_completo) ... ok
+test_fragmentacao_e_agrupamento (__main__.Integracao.test_fragmentacao_e_agrupamento) ... ok
+test_json_invalido_fecha_conexao (__main__.Integracao.test_json_invalido_fecha_conexao) ... ok
+test_limite_e_utf8 (__main__.Integracao.test_limite_e_utf8) ... ok
+test_mensagem_grande (__main__.Integracao.test_mensagem_grande) ... ok
+test_validacao (__main__.Integracao.test_validacao) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 4.062s
+
+OK
