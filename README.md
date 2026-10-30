@@ -152,5 +152,4 @@ O teste reserva uma porta livre automaticamente e não exige executar o servidor
 ## Referência do trabalho
 
 Enunciado fornecido: “ATIVIDADE AVALIATIVA — Desenvolvimento de Aplicação em Rede utilizando Sockets”, Fundamentos de Redes de Computadores. A proposta se relaciona à comunicação entre processos da camada de aplicação e à escolha do transporte estudadas no capítulo 2 de Kurose e Ross, indicado no enunciado. Não foram atribuídas páginas nem citações literais ao livro.
-# tarefas-de-redes---projeto-de-sockets
-# tarefas-de-redes---projeto-de-sockets
+
